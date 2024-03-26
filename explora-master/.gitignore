@@ -1,5 +1,0 @@
-# folder to ignore
-node_modules
-package-lock.json
-cache
-dist
