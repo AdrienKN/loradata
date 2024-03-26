@@ -7,7 +7,7 @@ hero:
   text: ""
   tagline: A collaborative IoT platform
   image:
-    src: public/logo_explora_cropped.png
+    src: logo_explora_cropped.png
     alt: kalisio-kano
     width: 230
   actions:
