@@ -7,10 +7,10 @@ export default defineConfig({
   ignoreDeadLinks: true,
   head: [
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css', rel: 'stylesheet' }],
-    ['link', { rel: 'icon', href: `https://s3.eu-central-1.amazonaws.com/kalisioscope/kano/kano-icon-64x64.png` }]
+    ['link', { rel: 'icon', href: `logo_explora_cropped.png` }]
   ],
   themeConfig: {
-    logo: '/public/logo_explora_cropped.png',
+    logo: 'logo_explora_cropped.png',
     domain: 'dev.kalisio.xyz',
     socialLinks: [{ icon: 'github', link: 'https://github.com/kalisio' }],
     nav: [
