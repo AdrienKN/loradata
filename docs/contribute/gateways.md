@@ -22,21 +22,24 @@ The second main method we are going to present here is more complex, and not so 
 
 ### Materials
 
-| Component                                  | Price |
-|-------------------------------------------|------|
-| [Raspberry Pi 2 Model B](https://www.ldlc.com/fiche/PB00182827.html) | 45€  |
-| [Antenna 3.5dBi - 7.5dBi](https://www.distrelec.fr/fr/antenne-wi-fi-blanc-dbi-rp-tnc-male-168-5mm-vis-cisco-air-ant2524dw/p/30244239?trackQuery=cat-DNAV_PL_3525686&pos=2&origPos=2&origPageSize=50&track=true&sid=fcfebca9204ef3f78f3df2c3975f650e60a4bdb0) | 45€  |
-| [Pigtail cable](https://shop.imst.de/wireless-modules/accessories/20/u.fl-to-sma-pigtail-cable-for-ic880a-spi) | 10€  |
-| [iC880A-SPI - LoRaWAN Concentrator 868 MHz](https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz) | 150€ |
-| [Power supply](https://www.reichelt.com/fr/fr/raspberry-pi-alimentation-5-1-v-2-5-a-micro-usb-prise-eu--rpi-ps-12-5eu-wt-p316266.html?PROVID=2810&gclid=Cj0KCQjwqP2pBhDMARIsAJQ0Czpc3bBkE3_ikJIpAeRvJ_jcr3drtYX6xJQLGIfDlgioRUuo5VOfEC8aAtn5EALw_wcB) | 10€  |
-| [Waterproof case](https://www.mhzshop.com/shop/Accessoires-MHz/Boites-etanches/Boite-etanche-avec-fixation-mat-203x203x65mm-GentleBOX-JE-200.html?force_sid=2hgj0f0gqk547k0sul2s8sebe0)     | 25€ |
-| 7x dual female jumper wires  | 10€  |
-| Micro SD card (4GB) | 10€  |
-| Ethernet cable | 10€  |
-| **Total**  |  **315€**  |
+| Component | Description | Price |
+| --- | --- | --- |
+| [Raspberry Pi 2 Model B](https://www.ldlc.com/fiche/PB00182827.html) |  | 45€  |
+| [Antenna 3.5dBi - 7.5dBi](https://www.distrelec.fr/fr/antenne-wi-fi-blanc-dbi-rp-tnc-male-168-5mm-vis-cisco-air-ant2524dw/p/30244239?trackQuery=cat-DNAV_PL_3525686&pos=2&origPos=2&origPageSize=50&track=true&sid=fcfebca9204ef3f78f3df2c3975f650e60a4bdb0) | | 45€  |
+| [Pigtail cable](https://shop.imst.de/wireless-modules/accessories/20/u.fl-to-sma-pigtail-cable-for-ic880a-spi) | | 10€  |
+| [iC880A-SPI - LoRaWAN Concentrator 868 MHz](https://shop.imst.de/wireless-modules/lora-products/8/ic880a-spi-lorawan-concentrator-868-mhz) | Multi-channel high performance transmitter/receiver module designed to receive several LoRa packets simultaneously using different spreading factors on multiple channels.  | 150€ |
+| [Power supply](https://www.reichelt.com/fr/fr/raspberry-pi-alimentation-5-1-v-2-5-a-micro-usb-prise-eu--rpi-ps-12-5eu-wt-p316266.html?PROVID=2810&gclid=Cj0KCQjwqP2pBhDMARIsAJQ0Czpc3bBkE3_ikJIpAeRvJ_jcr3drtYX6xJQLGIfDlgioRUuo5VOfEC8aAtn5EALw_wcB) | | 10€  |
+| [Waterproof case](https://www.mhzshop.com/shop/Accessoires-MHz/Boites-etanches/Boite-etanche-avec-fixation-mat-203x203x65mm-GentleBOX-JE-200.html?force_sid=2hgj0f0gqk547k0sul2s8sebe0) |  | 25€ |
+| 7x dual female jumper wires |  | 10€  |
+| Micro SD card (4GB) |  | 10€ |
+| Ethernet cable |  | 10€ |
+| | **Total**  |  **315€**  |
+
 *Source : [TheThingsNetwork](https://www.thethingsindustries.com/docs/gateways/models/raspberry-pi/)*
 
-
+::: tip What is a shield ? What is the difference with a HAT ?
+Arduino shield is a board that can be plugged on top of the Arduino PCB extending its capabilities. A HAT is the same, but for Raspberry Pi
+:::
 ::: details Subsitutes iC880A-SPI
 - 8 channels : 
     - [Pi Supply](https://uk.pi-supply.com/products/iot-lora-gateway-hat-for-raspberry-pi)

@@ -1,25 +1,16 @@
 
 # Robin
-
-- qu'est ce que Lora SX1276 Breakout Board ? 
-- Possible Feather M0 + shield ?
-- 1 port = 1 capteur ? Peut on mutualiser les messages ? Impact sur Duty cycle ?
-- Comment installer picots sur Feather M0 ?
-
+- Possible Feather M0 + shield ? ok
+- 1 port = 1 capteur ? Peut on mutualiser les messages ? Impact sur Duty cycle ? ok
+- Comment installer picots sur Feather M0 ? 
 
 # Romain
-J'ai un rasberry, je peux donc installer des librairies ChirpStack. OK. Pour une gateway, quels sont les packages indispensables ?  Selon moi :
-- MQTT Forwarder
-- ChirpStack Gateway OS
-- UDP Packet Forwarder ?
-
 - point kubernet
 librairies : https://www.chirpstack.io/docs/chirpstack-gateway-os/install/raspberry-pi.html
 
 # Points à regler :
 - FABRICATION CAPTEURS
     - cmb de capteurs sur un Feather M0 ?
-    - imperméabilité capteur : boite ?
     - besoin soudure ?
     - trouver des exemples de capteurs intéressants : 
         - temp
@@ -37,5 +28,3 @@ librairies : https://www.chirpstack.io/docs/chirpstack-gateway-os/install/raspbe
 - FABRICATION GATEWAYS :
     - prix des composants
     - tuto
-
-    sudo dcfldd bs=1M Téléchargen of=/dev/[sd_name]

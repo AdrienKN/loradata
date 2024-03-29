@@ -13,16 +13,16 @@ The second main method we are going to present here is more complex, but much mo
 ***WaziLab* [soil moisture active sensor](https://lab.waziup.io/solutions/waziup/automatic-irrigation) :**
 
 This soil moisture sensor is directly linked with a water pump, to manage automaticly water spully for plants. To do nthis, they used : 
-| Component | Price |
-| --- | --- |
-| WaziAct (= Feather M0 + power relay to control waterpump) | 40€ |
-| FT232 FTDI module with Mini USB Cable | 10€ | 
-| Soil Moisture Sensor | 20€ |
-| Submersible Water Pump | 10€ |
-| Some Jumper Wires | 5€ |
-| Power Supply | 10€ | 
-| Antenna | 45€ |
-| **Total** | 140€ |
+| Component | Description | Price |
+| --- | --- | --- |
+| WaziAct (= Feather M0 + power relay to control waterpump) | Adafruit Feather M0 Long Range (LoRa) Radio is a microcontroller with a LoRa packet radio transceive. | 40€ |
+| FT232 FTDI module with Mini USB Cable | USB to TTL Serial Converter Adapter Module. | 10€ | 
+| Soil Moisture Sensor | | 20€ |
+| Submersible Water Pump | | 10€ |
+| Some Jumper Wires | | 5€ |
+| Power Supply | | 10€ | 
+| Antenna | | 45€ |
+| | **Total** | 140€ |
 
 ::: details How to choose the right antenna ?
 Depending on the terrain, it is necessary to adapt the gain of the antenna, so its capcity to focus the output signal in an specific diection. Bigger is the gain (around 8dBi), less the signal is diffuse. ([GME](https://www.gme.net.au/au/news/understanding-antenna-gain-and-dbi/), 2024)
@@ -38,30 +38,29 @@ In large flat areas, an antenna with a strong gain is interesting. Contrarirly, 
 Antennas with a strong gain are obviously more expansive, compared to [unity gain antennas](https://shop.imst.de/wireless-modules/accessories/19/sma-antenna-for-ic880a-spi-wsa01-im880b-and-lite-gateway). In our case of study, the best solution would be to take antennas with [intermediate gain](https://www.distrelec.fr/fr/antenne-wi-fi-blanc-dbi-rp-tnc-male-168-5mm-vis-cisco-air-ant2524dw/p/30244239?trackQuery=cat-DNAV_PL_3525686&pos=2&origPos=2&origPageSize=50&track=true&sid=fcfebca9204ef3f78f3df2c3975f650e60a4bdb0), around 4dBi.
 :::
 
-**Tetraneutral [temperature sensor](https://docs.lora.tetaneutral.net/tutorials/capteur-temperature/) :**
-- **[M0 Feather](https://www.adafruit.com/product/3178)** :
-This is the Adafruit Feather M0 RFM95 LoRa Radio (900MHz). We call these RadioFruits, our take on an microcontroller with a "Long Range (LoRa)" packet radio transceiver with built in USB and battery charging. Its an Adafruit Feather M0 with a 900MHz radio module cooked in! Great for making wireless networks that are more flexible than Bluetooth LE and without the high power requirements of WiFi.
+**Tetraneutral [temperature sensor](https://docs.lora.tetaneutral.net/tutorials/capteur-temperature/) :** 
 
-- **[Sensor](https://fr.rs-online.com/web/p/thermistances/1241082)** : Basic water temperature sensor.
-
-- **[Antenna](https://www.distrelec.fr/fr/antenne-wi-fi-blanc-dbi-rp-tnc-male-168-5mm-vis-cisco-air-ant2524dw/p/30244239?trackQuery=cat-DNAV_PL_3525686&pos=2&origPos=2&origPageSize=50&track=true&sid=fcfebca9204ef3f78f3df2c3975f650e60a4bdb0)** : antennas with intermediate gain
-
-**Budget** : 80€
+| Component | Description | Price |
+| --- | --- | --- |
+| [M0 Feather](https://www.adafruit.com/product/3178) | Adafruit Feather M0 Long Range (LoRa) Radio is a microcontroller with a LoRa packet radio transceive. | 30€ |
+| [Sensor](https://fr.rs-online.com/web/p/thermistances/1241082) | Water temperature sensor | 20€ |
+| [Antenna](https://www.distrelec.fr/fr/antenne-wi-fi-blanc-dbi-rp-tnc-male-168-5mm-vis-cisco-air-ant2524dw/p/30244239?trackQuery=cat-DNAV_PL_3525686&pos=2&origPos=2&origPageSize=50&track=true&sid=fcfebca9204ef3f78f3df2c3975f650e60a4bdb0) | | 40€ |
+| | **Total** | 100€ |
 
 ### With Rasberry-Pi
 ***WaziLab* [weather station](https://lab.waziup.io/solutions/waziup/weather-station) :**
 
 They created a [complete LoRaWAN weather station](https://lab.waziup.io/solutions/waziup/weather-station
 ) with the following components : 
-| Component | Price |
-| --- | --- |
-| SparkFun Weather Shield Kit | 50€  |
-| SparkFun Weather Meter Kit | 75€ |
-| Arduino Uno with USB Cable | 30€ |
-| Lora SX1276 Breakout Board | 15€ |
-| Some Jumper WiresM0 | 5€ |
-| Power Supply | 10€ |
-| **Total** | **185€** |
+| Component | Description | Price |
+| --- | --- | --- |
+| SparkFun Weather Shield Kit | The SparkFun Weather Shield is an easy-to-use Arduino shield that grants you access to barometric pressure, relative humidity, luminosity and temperature.  | 50€  |
+| SparkFun Weather Meter Kit | Includes Wind Vane, Cup Anemometer and Tipping Bucket Rain Gauge to measure wind speed, wind direction, and rainfall. | 75€ |
+| Arduino Uno with USB Cable | | 30€ |
+| Lora SX1276 Breakout Board | Long Range Transceiver based on the SX1276 chipset. | 15€ |
+| Some Jumper WiresM0 | | 5€ |
+| Power Supply | | 10€ |
+| | **Total** | **185€** |
 
 ::: danger WARNING
 Home-made sensors are not water proof. If you plan to use it outdoors, remember to store it in a waterproof case. You can find it easily online :
