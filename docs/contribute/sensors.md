@@ -1,6 +1,8 @@
 ---
 outline: deep
 ---
+<div style="text-align: justify"> 
+
 # Build your own LoRaWAN sensor
 ## Ready-to-use sensor with LoRAWAN converter
 There are many ways to build a LoRaWAN sensor. The easiest one consist of pluging-in a sensor to an [LoRaWAN converter](https://eu.robotshop.com/fr/products/dragino-rs485-ln-rs485-to-lorawan-converter-868-mhz?gad_source=1&gclid=Cj0KCQjwqP2pBhDMARIsAJQ0Czo4W4Ad2Rkd8LrDPtcQDqOVRrOA1BdEKZSq0wmOhdydOwMRTf4MdNUaAlJJEALw_wcB), as sold by Arduino. 
@@ -70,6 +72,8 @@ Home-made sensors are not water proof. If you plan to use it outdoors, remember 
 
 
 ## Conclusion
+<center>
+
 | | LoRaWAN converter | With Feather M0 | With Rasberry-Pi |
 |:-:|:-:|:-:|:-:|
 | Autonomy | - | + | - |
@@ -79,5 +83,6 @@ Home-made sensors are not water proof. If you plan to use it outdoors, remember 
 | Waterproof | + | - | - |
 | Range | + | + | + |
 
+</center>
 
-
+</div>

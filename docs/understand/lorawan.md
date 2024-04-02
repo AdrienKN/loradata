@@ -1,6 +1,8 @@
 ---
 outline: deep
 ---
+<div style="text-align: justify"> 
+
 # The LoRaWAN technology
 
 The LoRaWAN® specification is a Low Power, Wide Area (LPWA) networking protocol designed to wirelessly connect battery operated ‘things’ to the internet in regional, national or global networks, and targets key Internet of Things (IoT) requirements such as bi-directional communication, end-to-end security, mobility and localization services. ([LoRa Alliance](https://lora-alliance.org/about-lorawan/), 2024)
@@ -39,3 +41,5 @@ Compared to Class A and Class B devices, Class C devices have the lowest latency
 A duty cycle or power cycle is the fraction of one period in which a signal or system is active.[1][2][3] Duty cycle is commonly expressed as a percentage or a ratio. A period is the time it takes for a signal to complete an on-and-off cycle. ([Wikipedia](https://en.wikipedia.org/wiki/Duty_cycle), 2024).
 
 In LoRaWAN, the duty cycle is usually near 1%. It means that on a **1h** period, a LoRaWAN device can transmit for **3.6 sec**.
+
+</div>

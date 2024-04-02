@@ -1,6 +1,8 @@
 ---
 outline: deep
 ---
+<div style="text-align: justify"> 
+
 # Build your own LoRaWAN Gateway
 
 There are many ways to build a LoRaWAN Gateway. In our study case, we want to collect environnemental data from oudoor sensor. Probabilities that gateways are stored also outdoor to mainain a good commmunication with sensors are high, so we need waterproof gateways.
@@ -87,11 +89,18 @@ Check [this tutorial](https://www.thethingsindustries.com/docs/gateways/models/r
 ## ChirpStack installation
 
 As explained in the [ChirpStack documentation](https://www.chirpstack.io/docs/), you need to install several packages :
-- ChirpStack MQTT Forwarder
 - ChirpStack Gateway OS
+- Chirpstack Concentratod
+- ChirpStack MQTT Forwarder
 
-
-
+To do this, you have to flash a ChirpStack image on the SD card contained in your raspberry pi. You can choose between two images :
+- the *base* one, which contains all necessary packages to build a gateway conntected to a external ChirpStack Network Server, i.e. ChirpStack Gateway OS, Concentratod and MQTT Forwarder
+- the *full* one, which has the same contains as the *base* image plus all packages needed to transform your gateway into a Network Server, i.e. to host ChirpStack.
     
-    
+To flash your SD Card, you can use [Balena Etcher](https://etcher.balena.io/) if you are working on linux or [Win32DiskImager](https://win32diskimager.org/) if you are working on windows.
 
+Then, connect your Gateway to internet (wifi or ethernet, anyway) and access to its ChirpStack interface trhough its I.P. adress (e.g. http://192.168.1.1). 
+
+Once you have succesfully done this, you just have to connect yout sensors to your gateway and your gateway to your Network Server. Congrats !
+
+</div>

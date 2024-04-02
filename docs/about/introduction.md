@@ -1,6 +1,8 @@
 ---
 outline: deep
 ---
+<div style="text-align: justify"> 
+
 # Introduction
 ## Context and Problematic
 
@@ -18,3 +20,5 @@ Build a collaborative tool to collect and share environnemental data, based on t
 **Steps :**
 - Build a display demonstrator to visualize data recorded with LoRaWAN sensors
 - Propose a gateway/sensor fabrication method    
+
+</div>
