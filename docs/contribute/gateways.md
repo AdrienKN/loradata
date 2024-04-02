@@ -3,7 +3,7 @@ outline: deep
 ---
 # Build your own LoRaWAN Gateway
 
-There are many ways to build a LoRaWAN Gateway. In our study case, we want to collect environnemental data from oudoor sensor/ Probabilities that gateways are stored also outdoor to mainain a good commmunication with sensors are high, so we need waterproof gateways.
+There are many ways to build a LoRaWAN Gateway. In our study case, we want to collect environnemental data from oudoor sensor. Probabilities that gateways are stored also outdoor to mainain a good commmunication with sensors are high, so we need waterproof gateways.
 
 ## Ready-to-use Gateway
 The easiest way to obtain this is to buy a [ready-to-use Gateway](https://sparwan.com/smart-office-/115-passerelle-lorawan-ug63-868m-6974225038176.html). 
@@ -18,7 +18,31 @@ Most ready-made gateways have been designed for indoor use. If you want to use i
 
 ## Homemade Gateway
 
-The second main method we are going to present here is more complex, and not so much economical. Advantages here are the compaibility : as we completely build the Gateway, we are free to manage its source-code, and so limit compataibily problems with ChirpStack.
+The second main method we are going to present here is more complex, and not so much economical. Advantage here is the compaibility : as we completely build the Gateway, we are free to manage its source-code, and so limit compataibily problems with ChirpStack. Our method is inspired by that of the [Tetaneutral project](https://docs.lora.tetaneutral.net/).
+
+::: details What is the Tetraneutral project ?
+The aim of this benevol initiativ is to develop a free LoRaWAN Network in Toulouse (FR).
+
+**Gateways**
+They propose several gateways model to contribute to their network. The kit IMST Lite Gateway is the most interesting one, and contains : 
+- a housing
+- a pre-certified concentrator iC880A-SPI
+- a Raspberry Pi
+- a pre-configured SD-card
+
+To run, it needs a battery and an antenna. 
+
+**Budget** : 320-360€
+
+**Temperature sensor**
+They created a test temperature sensor with the following components : 
+- Feather M0 : it carries an AM Cortex M0 processor (the same as the Arduino Zéro's one), a LoRa module (SX127x with SPI interface) and has 256Ko of memory.
+- DS18B20 temperature sensor
+- Battery
+- Antenna
+
+**Budget** : 70-100€
+:::
 
 ### Materials
 

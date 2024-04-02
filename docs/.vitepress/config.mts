@@ -55,8 +55,7 @@ function getAboutSidebar () {
 function getUnderstandSidebar () {
   return [
     { text: 'LoRaWAN', link: '/understand/lorawan' },
-    { text: 'Chirpstack', link: '/understand/chirpstack' },
-    { text: 'Tetaneutral', link: '/understand/tetaneutral' }
+    { text: 'Chirpstack', link: '/understand/chirpstack' }
   ]
 }
 
