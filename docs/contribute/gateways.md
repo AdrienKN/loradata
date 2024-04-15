@@ -66,25 +66,142 @@ They created a test temperature sensor with the following components :
 ::: tip What is a shield ? What is the difference with a HAT ?
 Arduino shield is a board that can be plugged on top of the Arduino PCB extending its capabilities. A HAT is the same, but for Raspberry Pi
 :::
+
 ::: details Subsitutes iC880A-SPI
-- 8 channels : 
-    - [Pi Supply](https://uk.pi-supply.com/products/iot-lora-gateway-hat-for-raspberry-pi)
-    - SB Components - [GatePi 8 Channels](https://shop.sb-components.co.uk/products/getpi-8) (uncertain compatibility with ChirpStack)
-- 4 channels :
-    - SB Components - [GatePi 4 Channels](https://github.com/sbcshop/GatePi-4CH) (uncertain compatibility with ChirpStack)
-    - [STMicroelectronics](https://fr.rs-online.com/web/p/modules-de-developpement-de-communication-et-sans-fil/1345557?cm_mmc=FR-PLA-DS3A-_-google-_-CSS_FR_FR_ePMax_Low-_--_-1345557&matchtype=&&gad_source=1&gclid=Cj0KCQjwwYSwBhDcARIsAOyL0fgZlGfEOMV0yRJgKcFtl8YZjrC55VYIhxCdJJ1nJYu-_CbLP0z0FqgaAmgTEALw_wcB&gclsrc=aw.ds)
-- 1 channel :
-    - SB Components - [LoRa HAT](https://shop.sb-components.co.uk/products/lora-hat-433mhz-868mhz?variant=39626122231891) (uncertain compatibility with ChirpStack)
+In our tutorial, we are working with a [PG1302 LoRaWAN Concentrator](https://www.dragino.com/products/lora/item/223-pg1302.html). Others compatible HAT and shields are listed in the [ChirpStack documentation](https://www.chirpstack.io/docs/chirpstack-gateway-os/hardware-support.html#supported-shields).
 :::
 
+<img src='../public/tutorial_gateway/1_components.jpeg' 
+        alt="Unavailable content"
+        style="display: slock; margin: 0 auto" />
+<center> <i> Components used for our home-made gateway </i></center>
 
 If your are not friendly with informatic assembly, you can also work with these multi-channels **Gateway kits** : 
 - [IMST kit](https://shop.imst.de/wireless-modules/lora-products/36/lite-gateway-demonstration-platform-for-lora-technology?number=409820), for **299€**
 - [RAK D0 kit](https://store.rakwireless.com/products/rak7246-lpwan-developer-gateway?variant=36313275465886&utm_source=RAK7246GDeveloperD0%2B&utm_medium=Document&utm_campaign=BuyFromStore), for **100€**
 
-### Assembly
 
-Check [this tutorial](https://www.thethingsindustries.com/docs/gateways/models/raspberry-pi/), made by TheThingsNetwork.
+### Assembly
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-hat {
+  float: left;
+  width: 33.33%;
+  padding: 5px;; 
+}
+.img-antennas {
+  float: left;
+  width: 50%;
+  padding: 5px;; 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+**1. Flash the SD card :**
+
+As explained in the [ChirpStack documentation](https://www.chirpstack.io/docs/), you need to install several packages :
+- ChirpStack Gateway OS
+- Chirpstack Concentratod
+- ChirpStack MQTT Forwarder
+
+To do this, you have to flash a ChirpStack image on the SD card contained in your raspberry pi. You can choose between two images :
+- the *base* one, which contains all necessary packages to build a gateway conntected to a external ChirpStack Network Server, i.e. ChirpStack Gateway OS, Concentratod and MQTT Forwarder
+- the *full* one, which has the same contains as the *base* image plus all packages needed to transform your gateway into a Network Server, i.e. to host ChirpStack.
+    
+To flash your SD Card, you can use [Balena Etcher](https://etcher.balena.io/) if you are working on linux or [Win32DiskImager](https://win32diskimager.org/) if you are working on windows. Then, insert it in your Raspberry-Pi.
+
+<img src='../public/tutorial_gateway/2_sd.jpeg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" width='300' >
+<center> <i> Insert the flashed SD card </i></center>
+
+**2. Plug the LoRaWAN HAT**
+
+The second step is to connect your LoRaWAN HAT to your Raspberry-Pi and attach it.
+
+<div class="clearfix">
+    <div class="img-hat">
+        <img src='../public/tutorial_gateway/3_fixations.jpeg' 
+            alt="Unavailable content"
+            style="display: slock; margin: 0 auto" width='400' >
+    </div>
+    <div class="img-hat">
+        <img src='../public/tutorial_gateway/4_hat.jpeg' 
+            alt="Unavailable content"
+            style="display: slock; margin: 0 auto" width='400' >
+    </div>
+    <div class="img-hat">
+        <img src='../public/tutorial_gateway/5_hat.jpeg' 
+            alt="Unavailable content"
+            style="display: slock; margin: 0 auto" />
+    </div>
+</div>
+<center> <i> Fix the LoRaWAN HAT on the Raspberry-Pi </i></center>
+
+::: tip Reminder
+In our tutorial, we are working with a [PG1302 LoRaWAN Concentrator](https://www.dragino.com/products/lora/item/223-pg1302.html). Others compatible HAT and shields are listed in the [ChirpStack documentation](https://www.chirpstack.io/docs/chirpstack-gateway-os/hardware-support.html#supported-shields).
+:::
+
+**3. Set the incoming HAT intensity**
+
+Set the intensity of the incoming power to 5V, by moving the yellow plastic holder.
+
+<img src='../public/tutorial_gateway/4_tension.jpeg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" />
+<center> <i> Set the tension to 5V </i></center>
+
+
+**4. Plug the radio and GPS antennas**
+
+Radio and GPS connector locations depends on your LoRaWAN HAT. In our case, it is on the right for the GPS and in the middle for the antenna.
+
+<div class="clearfix">
+    <div class="img-antennas">
+        <img src='../public/tutorial_gateway/6_antenna.jpeg' 
+            alt="Unavailable content"
+            style="display: slock; margin: 0 auto" width='300' >
+    </div>
+    <div class="img-antennas">
+        <img src='../public/tutorial_gateway/7_gps.jpeg' 
+            alt="Unavailable content"
+            style="display: slock; margin: 0 auto" width='300' >
+    </div>
+</div>
+<center> <i> Connect the radio and GPS antennas to the LoRaWAN HAT </i></center>
+
+**5. Protect your gateway in an adapted case**
+
+<img src='../public/tutorial_gateway/9_case.jpeg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" width='300' >
+<center> <i> Store the gateway in a case </i></center>
+
+**6. Power on your gateway**
+
+Once powered on, you will see defferent LeDs. If you do not, it means you made a mistacke in the building or in the preparation of the SD card.
+
+::: warning WARNING
+Do not forget to connect the radio antenna to your gateway BEFORE powering it on : it may damage your LoRaWAN hub.
+:::
+
+<img src='../public/tutorial_gateway/10_power.jpeg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" width='300' >
+<center> <i> Connect the radio antenna and power on your gateway </i></center>
+
+
+For further informations about this assembly, check out this other [similiar tutorial](https://www.thethingsindustries.com/docs/gateways/models/raspberry-pi/), made by TheThingsNetwork.
+
+LeDs are on ? Congrats ! Your LoRaWAN gateway is ready-to-use. Let's connect it to a ChirpStack Network Server.
 
 ## ChirpStack installation
 
