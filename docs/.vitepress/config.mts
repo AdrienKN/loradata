@@ -7,7 +7,7 @@ export default defineConfig({
   ignoreDeadLinks: true,
   head: [
     ['link', { href: 'https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css', rel: 'stylesheet' }],
-    ['link', { rel: 'icon', href: `logo_explora_cropped.png` }]
+    ['link', { rel: 'icon', href: `logo_loradata_cropped.png` }]
   ],
   themeConfig: {
     logo: 'logo_loradata_cropped.png',
