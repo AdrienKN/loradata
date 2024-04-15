@@ -3,11 +3,11 @@
 layout: home
 
 hero:
-  name: "expLoRa"
+  name: "LoRaData"
   text: ""
   tagline: A collaborative IoT platform
   image:
-    src: logo_explora_cropped.png
+    src: logo_loradata_cropped.png
     alt: kalisio-kano
     width: 230
   actions:
