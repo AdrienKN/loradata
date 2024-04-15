@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/explora/',
-  title: 'expLoRa',
+  base: '/loradata/',
+  title: 'LoRaData',
   description: 'Collaborative IoT platform',
   ignoreDeadLinks: true,
   head: [
@@ -10,9 +10,9 @@ export default defineConfig({
     ['link', { rel: 'icon', href: `logo_explora_cropped.png` }]
   ],
   themeConfig: {
-    logo: 'logo_explora_cropped.png',
+    logo: 'logo_loradata_cropped.png',
     domain: 'dev.kalisio.xyz',
-    socialLinks: [{ icon: 'github', link: 'https://github.com/kalisio' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/AdrienKN/loradata' }],
     nav: [
       { text: 'About', link: '/about/introduction' },
       { text: 'Understand', link: '/understand/lorawan' },
