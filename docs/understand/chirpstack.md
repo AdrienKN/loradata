@@ -13,7 +13,7 @@ ChirpStack is an open-source LoRaWAN Network Server which can be used to to setu
 <img src='../public/chirpstack_network.png' 
         alt="Unavailable content"
         style="display: slock; margin: 0 auto" />
-
+<center> <i> (Chirpstack, 2024) </i> </center>
 
 ## Main components
 ### ChirpStack Concentrator
