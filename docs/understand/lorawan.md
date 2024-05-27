@@ -9,7 +9,7 @@ The LoRaWAN® specification is a Low Power, Wide Area (LPWA) networking protocol
 
 ## Network structure
 
-<img src='../public/lorawan-architecture.png' 
+<img src='../public/lorawan_architecture.png' 
         alt="Unavailable content"
         style="display: slock; margin: 0 auto" />
 
