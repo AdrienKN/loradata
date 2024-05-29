@@ -10,7 +10,7 @@ There are many ways to build a LoRaWAN Gateway. In our study case, we want to co
 ## Ready-to-use Gateway
 The easiest way to obtain this is to buy a [ready-to-use Gateway](https://sparwan.com/smart-office-/115-passerelle-lorawan-ug63-868m-6974225038176.html). 
 
-**Budget** : ~200-300€**
+**Budget** : 200-300€**
 
 ::: danger WARNING
 Many ready-to-use Gateways are  not compatible with [Chirpstack](https://www.chirpstack.io/docs/). Don't forget to check the userguide and technical manual.
@@ -34,7 +34,7 @@ They propose several gateways model to contribute to their network. The kit IMST
 
 To run, it needs a battery and an antenna. 
 
-**Budget** : ~320-360€
+**Budget** : 320-360€
 
 **Temperature sensor**
 They created a test temperature sensor with the following components : 
@@ -43,7 +43,7 @@ They created a test temperature sensor with the following components :
 - Battery
 - Antenna
 
-**Budget** : ~70-100€
+**Budget** : 70-100€
 :::
 
 ### Materials
@@ -59,7 +59,7 @@ They created a test temperature sensor with the following components :
 | 7x dual female jumper wires |  |
 | Micro SD card (4GB) |  |
 | Ethernet cable |  |
-| | **Total**  |  ~300-350€  |
+| | **Total**  |  300-350€  |
 
 *Source : [TheThingsNetwork](https://www.thethingsindustries.com/docs/gateways/models/raspberry-pi/)*
 

@@ -24,7 +24,7 @@ This soil moisture sensor is directly linked with a water pump, to manage automa
 | Some Jumper Wires | |
 | Power Supply | |
 | Antenna | |
-| | **Total** | ~150-200€ |
+| | **Total** | 150-200€ |
 
 ::: details How to choose the right antenna ?
 Depending on the terrain, it is necessary to adapt the gain of the antenna, so its capcity to focus the output signal in an specific diection. Bigger is the gain (around 8dBi), less the signal is diffuse. ([GME](https://www.gme.net.au/au/news/understanding-antenna-gain-and-dbi/), 2024)
@@ -47,7 +47,7 @@ Antennas with a strong gain are obviously more expansive, compared to [unity gai
 | [M0 Feather](https://www.adafruit.com/product/3178) | Adafruit Feather M0 Long Range (LoRa) Radio is a microcontroller with a LoRa packet radio transceive. |
 | [Sensor](https://fr.rs-online.com/web/p/thermistances/1241082) | Water temperature sensor |
 | [Antenna](https://www.distrelec.fr/fr/antenne-wi-fi-blanc-dbi-rp-tnc-male-168-5mm-vis-cisco-air-ant2524dw/p/30244239?trackQuery=cat-DNAV_PL_3525686&pos=2&origPos=2&origPageSize=50&track=true&sid=fcfebca9204ef3f78f3df2c3975f650e60a4bdb0) | |
-| | **Total** | ~100-150€ |
+| | **Total** | 100-150€ |
 
 ### With Rasberry-Pi
 ***WaziLab* [weather station](https://lab.waziup.io/solutions/waziup/weather-station) :**
