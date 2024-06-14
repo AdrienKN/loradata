@@ -218,6 +218,18 @@ To flash your SD Card, you can use [Balena Etcher](https://etcher.balena.io/) if
 
 Then, connect your Gateway to internet (wifi or ethernet, anyway) and access to its ChirpStack interface trhough its I.P. adress (e.g. http://192.168.1.1). 
 
-Once you have succesfully done this, you just have to connect yout sensors to your gateway and your gateway to your Network Server. Congrats !
+Once you have succesfully done this, you just have to connect yout sensors to your gateway and your gateway to your Network Server.
+
+## Add your Gateway to ChirpStack
+### Login and tenant
+When you login the [Kalisio ChirpStack](https://chirpstack.loradata.kalisio.xyz/), a user profile is created for you, and you are automaticly assigned to a tenant, regarding your compagny.
+If you have the required status, you can also create your own tenant, by adding a new one in the corresponding tab.
+
+### Add your Gateway
+Now you are belonging to  a tenant, you can declare your gateway. Connect to your gateway with its IP adress, open the UDP tab and enter the following adress : 51.68.80.75:1700 . Save and submit.
+
+Go back tu ChirpStack, open the *Gateways* tab, and clik on *Add gateway*. Fill the required informations : name of your choice and ID of your machine, then *Submit*.
+
+Wait a few minutes. Then, go in the LoRaWAN frames and check if your gateway is well paired with ChirpStack. If you have an issue, chek your Gateway system logs, available on your gateeway IHM. If you do not find ay solution, [contact us]('../about/contact.md').
 
 </div>
