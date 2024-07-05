@@ -212,7 +212,7 @@ If the SD card of your gateway is well flashed, you should arrive on a ChirpStac
 
 <img src='../public/tutorial_gateway/11_connect-gw.jpeg' 
     alt="Unavailable content"
-    style="display: slock; margin: 0 auto" width='500' >
+    style="display: slock; margin: 0 auto" >
 <center> <i> ChirpStack connection interface of your gateway </i></center>
 
 We advise you to configure a password for you gateway as soon as possible, to enforce its security.
@@ -221,7 +221,7 @@ Second step is to get your gateway ID, by configuring its concentratord. Click o
 
 <img src='../public/tutorial_gateway/12_concentratord.jpeg' 
     alt="Unavailable content"
-    style="display: slock; margin: 0 auto" width='500' >
+    style="display: slock; margin: 0 auto" >
 <center> <i> ChirpStack concentrator configuration </i></center>
 
 In our case, we use the Draguino PG1302 hat, so we select the SX1302/SX1303, and set it in the *SX1302/SX1303* section.
@@ -238,7 +238,7 @@ In the Joining Network form, enter the following values and click Submit:
 
 <img src='../public/tutorial_gateway/13_wireless.jpg' 
     alt="Unavailable content"
-    style="display: slock; margin: 0 auto" width='500' >
+    style="display: slock; margin: 0 auto" >
 <center> <i> Joining Network form </i></center>
 
 Click *Save & Apply*
