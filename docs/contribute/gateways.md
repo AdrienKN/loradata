@@ -187,7 +187,7 @@ Radio and GPS connector locations depends on your LoRaWAN HAT. In our case, it i
 
 **6. Power on your gateway**
 
-Once powered on, you will see defferent LeDs. If you do not, it means you made a mistacke in the building or in the preparation of the SD card.
+Once powered on and linked to your internet box via ethernet, wait a few minutes. Then you will see different LeDs on. If you do not, it means you made a mistacke in the building or in the preparation of the SD card.
 
 ::: warning WARNING
 Do not forget to connect the radio antenna to your gateway BEFORE powering it on : it may damage your LoRaWAN hub.
@@ -201,24 +201,49 @@ Do not forget to connect the radio antenna to your gateway BEFORE powering it on
 
 For further informations about this assembly, check out this other [similiar tutorial](https://www.thethingsindustries.com/docs/gateways/models/raspberry-pi/), made by TheThingsNetwork.
 
-LeDs are on ? Congrats ! Your LoRaWAN gateway is ready-to-use. Let's connect it to a ChirpStack Network Server.
+LeDs are on ? Congrats ! Your LoRaWAN gateway is ready-to-use. Let's configure it to connect it to your ChirpStack Network Server.
 
-## ChirpStack installation
+## Configuration
+### Gateway ID
 
-As explained in the [ChirpStack documentation](https://www.chirpstack.io/docs/), you need to install several packages :
-- ChirpStack Gateway OS
-- Chirpstack Concentratod
-- ChirpStack MQTT Forwarder
+Now your Gateway is powered on, let's connect to its web interface to configure it. Curl its IP adress by checking the web interface of your internet box, and paste it in the URL bar of your web navigator.
 
-To do this, you have to flash a ChirpStack image on the SD card contained in your raspberry pi. You can choose between two images :
-- the *base* one, which contains all necessary packages to build a gateway conntected to a external ChirpStack Network Server, i.e. ChirpStack Gateway OS, Concentratod and MQTT Forwarder
-- the *full* one, which has the same contains as the *base* image plus all packages needed to transform your gateway into a Network Server, i.e. to host ChirpStack.
-    
-To flash your SD Card, you can use [Balena Etcher](https://etcher.balena.io/) if you are working on linux or [Win32DiskImager](https://win32diskimager.org/) if you are working on windows.
+If the SD card of your gateway is well flashed, you should arrive on a ChirpStack login page, to acess to your device settings. The login *root* should be pre-filled. At this stage, no password is defined for your gateway, so just clik on *Login*. 
 
-Then, connect your Gateway to internet (wifi or ethernet, anyway) and access to its ChirpStack interface trhough its I.P. adress (e.g. http://192.168.1.1). 
+<img src='../public/tutorial_gateway/11_connect-gw.jpeg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" width='500' >
+<center> <i> ChirpStack connection interface of your gateway </i></center>
 
-Once you have succesfully done this, you just have to connect yout sensors to your gateway and your gateway to your Network Server.
+We advise you to configure a password for you gateway as soon as possible, to enforce its security.
+
+Second step is to get your gateway ID, by configuring its concentratord. Click on the *ChirStack > Concentratord*, enable the ChirpStack concentrator by clicking on the checkbox, and select the corresonding chipset of your LoRa Hat. 
+
+<img src='../public/tutorial_gateway/12_concentratord.jpeg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" width='500' >
+<center> <i> ChirpStack concentrator configuration </i></center>
+
+In our case, we use the Draguino PG1302 hat, so we select the SX1302/SX1303, and set it in the *SX1302/SX1303* section.
+
+*Save & apply* your modifications. You should now see the ID of your gateay in the bottom right corner of your screen. If you still have an error message, check the [ChirpStack documentation](https://www.chirpstack.io/docs/).
+
+### Wireless
+If your Raspeberry support wifi connection, go in the *Network > Wireless* section. Click on *scan* and select your wifi network. 
+
+In the Joining Network form, enter the following values and click Submit:
+- Replace wireless configuration: Selected
+- WPA passphrase: Enter the password of the selected Wi-Fi network
+- Create / Assign firewall-zone: Select lan [lan: ] [wwan: ]
+
+<img src='../public/tutorial_gateway/13_wireless.jpg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" width='500' >
+<center> <i> Joining Network form </i></center>
+
+Click *Save & Apply*
+
+In the *Wireless Overview/, you can see your wifi network, and its statistics. You can now unplug the Ethernet cable from your gateway !
 
 ## Add your Gateway to ChirpStack
 ### Login and tenant
