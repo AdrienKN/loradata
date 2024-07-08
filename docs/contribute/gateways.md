@@ -3,11 +3,10 @@ outline: deep
 ---
 <div style="text-align: justify"> 
 
-# Build your own LoRaWAN Gateway
-
+## Obtain a Gateway
 There are many ways to build a LoRaWAN Gateway. In our study case, we want to collect environnemental data from oudoor sensor. Probabilities that gateways are stored also outdoor to mainain a good commmunication with sensors are high, so we need waterproof gateways.
 
-## Ready-to-use Gateway
+### Ready-to-use
 The easiest way to obtain this is to buy a [ready-to-use Gateway](https://sparwan.com/smart-office-/115-passerelle-lorawan-ug63-868m-6974225038176.html). 
 
 **Budget** : 200-300€**
@@ -18,7 +17,7 @@ Many ready-to-use Gateways are  not compatible with [Chirpstack](https://www.chi
 Most ready-made gateways have been designed for indoor use. If you want to use it outdoor, you will have to protect it against water, by storing it in a [waterproof case](https://www.mhzshop.com/shop/Accessoires-MHz/Boites-etanches/Boite-etanche-avec-fixation-mat-203x203x65mm-GentleBOX-JE-200.html?force_sid=2hgj0f0gqk547k0sul2s8sebe0), or by simply choosing a really expansive [adapted Gateway](https://envytech.fr/boutique/milesight-ug67-passerelle-lorawan-exterieure/?attribute_version=Antennes+externes++4G+embarqu%C3%A9&utm_source=Google+Shopping&utm_campaign=TWENGA&utm_medium=cpc&utm_term=16474&gad_source=1).
 :::
 
-## Homemade Gateway
+### Homemade
 
 The second main method we are going to present here is more complex, and not so much economical. Advantage here is the compaibility : as we completely build the Gateway, we are free to manage its source-code, and so limit compataibily problems with ChirpStack. Our method is inspired by that of the [Tetaneutral project](https://docs.lora.tetaneutral.net/).
 
@@ -46,7 +45,7 @@ They created a test temperature sensor with the following components :
 **Budget** : 70-100€
 :::
 
-### Materials
+#### Materials
 
 | Component | Description |
 | --- | --- |
@@ -81,7 +80,7 @@ If your are not friendly with informatic assembly, you can also work with these 
 - [RAK D0 kit](https://store.rakwireless.com/products/rak7246-lpwan-developer-gateway?variant=36313275465886&utm_source=RAK7246GDeveloperD0%2B&utm_medium=Document&utm_campaign=BuyFromStore), for **100€**
 
 
-### Assembly
+#### Assembly
 <style>
 * {
   box-sizing: border-box;
@@ -203,8 +202,8 @@ For further informations about this assembly, check out this other [similiar tut
 
 LeDs are on ? Congrats ! Your LoRaWAN gateway is ready-to-use. Let's configure it to connect it to your ChirpStack Network Server.
 
-## Configuration
-### Gateway ID
+## Configure your Gateway
+### Define ID
 
 Now your Gateway is powered on, let's connect to its web interface to configure it. Curl its IP adress by checking the web interface of your internet box, and paste it in the URL bar of your web navigator.
 
@@ -228,7 +227,7 @@ In our case, we use the Draguino PG1302 hat, so we select the SX1302/SX1303, and
 
 *Save & apply* your modifications. You should now see the ID of your gateay in the bottom right corner of your screen. If you still have an error message, check the [ChirpStack documentation](https://www.chirpstack.io/docs/).
 
-### Wireless
+### Turn on wireless
 If your Raspeberry support wifi connection, go in the *Network > Wireless* section. Click on *scan* and select your wifi network. 
 
 In the Joining Network form, enter the following values and click Submit:
@@ -250,7 +249,7 @@ In the *Wireless Overview/, you can see your wifi network, and its statistics. Y
 When you login the [Kalisio ChirpStack](https://chirpstack.loradata.kalisio.xyz/), a user profile is created for you, and you are automaticly assigned to a tenant, regarding your compagny.
 If you have the required status, you can also create your own tenant, by adding a new one in the corresponding tab.
 
-### Add your Gateway
+### Declare your device
 Now you are belonging to  a tenant, you can declare your gateway. Connect to your gateway with its IP adress, open the UDP tab and enter the following adress : 51.68.80.75:1700 . Save and submit.
 
 Go back tu ChirpStack, open the *Gateways* tab, and clik on *Add gateway*. Fill the required informations : name of your choice and ID of your machine, then *Submit*.
