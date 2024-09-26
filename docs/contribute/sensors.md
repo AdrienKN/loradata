@@ -145,8 +145,10 @@ Click on *Add device* and fill-in the form. Enter the name you want for your sen
 
 Select the device profile corresponding to your device, and *Submit*.
 
-Your device is declared ! 
+Now your device is declared, you must fill the connection keys, to help ChirpStack to talk with your device. 
 
-Click on your device, and go to *event* section. You can see now LoRaWAN frames from your sensor. Congratulations ! 
+In the *Applications* tab, click on your device id. Check your sensor settings : if it supports process, click on the *OTAA* tab. If it supports APB instead of OTAA, click on *Activation* tab. Fill the asked connection keys. 
+
+*Save and submit*, and go to *event* section. You can see now LoRaWAN frames from your sensor. Congratulations ! 
 
 </div>
