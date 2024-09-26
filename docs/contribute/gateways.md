@@ -246,11 +246,16 @@ In the *Wireless Overview/, you can see your wifi network, and its statistics. Y
 
 ## Add your Gateway to ChirpStack
 ### Login and tenant
-When you login the [Kalisio ChirpStack](https://chirpstack.loradata.kalisio.xyz/), a user profile is created for you, and you are automaticly assigned to a tenant, regarding your compagny.
+When you login the [Kalisio ChirpStack](https://chirpstack.dev.kalisio.xyz/#/tenants/52f14cd4-c6f1-4fbd-8f87-4025e1d49242/applications), a user profile is created for you, and you are automaticly assigned to a tenant, regarding your compagny.
 If you have the required status, you can also create your own tenant, by adding a new one in the corresponding tab.
 
 ### Declare your device
-Now you are belonging to  a tenant, you can declare your gateway. Connect to your gateway with its IP adress, open the UDP tab and enter the following adress : 51.68.80.75:1700 . Save and submit.
+Now you are belonging to a tenant, you can declare your gateway. Connect to your gateway with its IP adress, open the UDP tab and enter the following adress : 51.68.112.161:31700 . Save and submit.
+
+<img src='../public/tutorial_gateway/14_udp.jpg' 
+    alt="Unavailable content"
+    style="display: slock; margin: 0 auto" >
+<center> <i> UDP connection tab on your Gateway IHM </i></center>
 
 Go back tu ChirpStack, open the *Gateways* tab, and clik on *Add gateway*. Fill the required informations : name of your choice and ID of your machine, then *Submit*.
 
